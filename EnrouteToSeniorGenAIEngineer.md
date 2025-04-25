@@ -275,3 +275,62 @@ You also mentioned "basemodal gpt+1," which I interpret as a reference to the fo
 * **GPT-3.5** serves as a still powerful and more cost-effective base model for text-centric NLP tasks.
 
 All these models are based on the Transformer architecture and are proprietary to OpenAI, with access and usage governed by their API and subscription terms.
+
+# Llama - decoder only 
+
+Let's analyze Llama 3 based on our established points. Since there have been multiple releases under the Llama 3 name, I will refer to the general characteristics and the latest information available as of **Friday, April 25, 2025, 7:32 PM IST**, in Bengaluru, Karnataka, India.
+
+**Llama 3 Analysis:**
+
+* **Transformer Type:**
+    * Llama 3 models utilize a **decoder-only Transformer architecture**, similar to the GPT series. This is a standard architecture for generative language models. Meta has focused on optimizations within this architecture, such as **Grouped Query Attention (GQA)**, to improve inference speed and efficiency.
+
+* **Task Domain:**
+    * The primary domain of Llama 3 is **natural language processing (NLP)**. It is designed to be a versatile language model capable of a wide range of text-based tasks, including:
+        * Text generation (creative writing, articles, etc.)
+        * Language translation
+        * Question answering
+        * Summarization
+        * Code generation
+        * Dialogue and conversational AI
+
+    * Meta has also indicated plans to expand Llama's capabilities to be **multilingual and multimodal** in future versions, with Llama 4 released in April 2025 being multimodal (text and image input, text output) and multilingual (12 languages).
+
+* **Performance:**
+    * Llama 3 has demonstrated **strong performance** on various NLP benchmarks, often outperforming other open-source models of similar sizes (8B and 70B parameter versions). Meta's testing in April 2024 showed the 70B parameter Llama 3 model beating Gemini Pro 1.5 and Claude 3 Sonnet on most benchmarks. The larger 405B parameter version (Llama 3.1) and the even larger Llama 4 models are expected to push these performance boundaries further. Key improvements over Llama 2 include better reasoning, code generation, and instruction following.
+
+* **Capabilities:**
+    * Llama 3's capabilities include:
+        * Generating coherent and high-quality text.
+        * Understanding and responding to prompts effectively.
+        * Performing well on reasoning and code generation tasks (with significant improvements over Llama 2 due to a larger code dataset in training).
+        * Handling longer sequences with an increased context window.
+        * Multilingual capabilities (expanded in Llama 3.1 and Llama 4).
+        * Multimodal capabilities (introduced in Llama 4 with text and image input).
+
+* **Context Window:**
+    * The context window size has increased with Llama 3. The initial Llama 3 release featured a context window of **8,192 tokens**, double that of Llama 2. Llama 3.1 further extended this, with the 405B parameter model reaching **128,000 tokens**. Llama 4, released in April 2025, continues this trend with context windows up to **1 million tokens** in some variants. This larger context allows the model to process and understand longer documents and have more extended "memory" in conversations.
+
+* **Size:**
+    * Llama 3 has been released in various sizes. The initial release in April 2024 included models with **8 billion and 70 billion parameters**. Subsequently, a larger **405 billion parameter** model (Llama 3.1) was released in July 2024. Llama 4 models released in April 2025 include sizes like **109B, 400B, and even 2 trillion parameters**. Meta strategically releases models of different sizes to cater to various computational resources and performance needs.
+
+* **Cost and Licensing:**
+    * Llama 3 is released under the **Meta Llama 3 Community License**. This license allows for **commercial use**, subject to an Acceptable Use Policy. However, the Free Software Foundation and the Open Source Initiative still do not consider the Llama licenses to be true "Open Source" licenses due to certain restrictions.
+    * While the model weights are generally available for download, there are "Additional Commercial Terms" that apply if the monthly active users of products or services making the Llama Materials available exceed 700 million. In such cases, a separate license from Meta is required.
+    * The primary cost associated with Llama 3 is the **computational resources** required to run or fine-tune the models, which can be significant for the larger parameter versions. However, the model weights themselves are available without direct cost under the community license. Llama 3 is also available on platforms like AWS Marketplace with hourly usage-based pricing.
+
+**Llama Early Release (Referring to initial Llama models):**
+
+The "base Llama early release" would refer to the initial Llama models released by Meta AI starting in February 2023. These models (e.g., 7B, 13B, 33B, and 65B parameters) were significant as they provided powerful language models with publicly available weights for research purposes, though the initial license had restrictions on commercial use.
+
+Key characteristics of the early Llama releases:
+
+* **Transformer Type:** Decoder-only Transformer architecture.
+* **Task Domain:** Natural language processing research.
+* **Performance:** Demonstrated strong performance compared to other publicly available models at the time.
+* **Capabilities:** Text generation, basic question answering, limited translation.
+* **Context Window:** Relatively small, around **2,048 tokens**.
+* **Size:** Ranging from **7 billion to 65 billion parameters**.
+* **Cost and Licensing:** Initially released under a research-focused license that restricted commercial use and required approval from Meta. This differed significantly from the later Llama 2 and Llama 3 licenses, which are more permissive for commercial applications.
+
+The progression from the early Llama releases to Llama 3 and Llama 4 shows a clear trend towards larger models, longer context windows, improved performance across a wider range of tasks (including multimodality), and more commercially permissive licensing.
